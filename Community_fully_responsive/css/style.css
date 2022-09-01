@@ -1,0 +1,122 @@
+:root{
+    --clr-primary: hsl(0, 0%, 92%);
+    --clr-main: hsl(0, 0%, 100%);
+    --clr-secondary: rgb(90, 176, 176);
+    --clr-thirdly: rgb(108, 188, 188);
+    --clr-button: rgb(197, 222, 86);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--clr-primary);
+    display: flex;
+}
+
+.container{
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    margin-top: 100px;
+}
+.box2, .box3{
+    float: left;
+}
+.box1{
+    height: 45%;
+    width: 100%;
+    background-color: var(--clr-main);
+    border-radius: 5px 5px 0px 0px;
+}
+.box2{
+    height: 55%;
+    width: 50%;
+    background-color: var(--clr-secondary);
+    border-radius: 0px 0px 0px 5px;
+}
+.box3{
+    height: 55%;
+    width: 50%;
+    background-color: var(--clr-thirdly);
+    border-radius: 0px 0px 5px 0px;
+}
+.box1 h1{
+    color: var(--clr-secondary);
+    padding-top: 45px;
+    font-size: 1.8rem;
+}
+.box1 h2{
+    color: var(--clr-button);
+    padding-top: 20px;
+    font-size: 1.4rem;
+}
+.box1 p{
+    color: var(--clr-thirdly);
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+.box, h1, h2, h3, p{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.box2 h2, .box3 h2{
+    padding-top: 45px;
+    color: var(--clr-main);
+}
+.box2 h3{
+    font-size: 2rem;
+    color: var(--clr-main);
+}
+.box2 p, .box3 p{
+    color: var(--clr-main);
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+button{
+    width: 250px;
+    height: 50px;
+    font-size: 1.2rem;
+    margin-left: 30px;
+    color: var(--clr-main);
+    background-color: var(--clr-button);
+    border-radius: 5px;
+}
+
+@media (max-width: 757px){
+    .container{
+        margin-top: -20px;
+    }
+}
+@media (max-width: 757px){
+    .box2{
+        width: 100%;
+        border-radius: 0px 0px 0px 0px;
+    }
+}
+@media (max-width: 757px){
+    .box3{
+        width: 100%;
+        border-radius: 0px 0px 5px 5px;
+    }
+}
+@media (max-width: 524px){
+    .box1{
+        height: 60%;
+    }
+}
+@media (max-width: 369px){
+    .box1{
+        height: 65%;
+    }
+}
+@media (max-width: 344px){
+    .box2{
+        height: 60%;
+    }
+}
+
+
+
+
